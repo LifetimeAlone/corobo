@@ -24,9 +24,6 @@ default_actions = PEP8Bear: ApplyPatchAction
 [all.linelength]
 bears = LineLengthBear
 
-[all.links]
-bears = InvalidLinkBear
-
 [commits]
 bears = GitCommitBear
 shortlog_regex = ([^:]*|[^:]+[^ ]: [A-Z0-9*].*)
