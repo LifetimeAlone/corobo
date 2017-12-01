@@ -38,7 +38,7 @@ class GitStats(LabHub):
 
         @check_mr
         def check_labels(merge_request):
-            labels = set(merge_request.labels)
+            labels = {*merge_request.labels}
             if labels.intersection(self.PR_LABELS):
                 return True
             return False
